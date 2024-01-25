@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia de la Biblioteca</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #3498db;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #2ecc71;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Descripción de la Biblioteca</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Historia de la Biblioteca</h2>
+            <p>
+                Aquí puedes escribir la historia de la biblioteca, su fundación, objetivos, etc.
+            </p>
+        </section>
+        <section>
+            <h2>Servicios Ofrecidos</h2>
+            <p>
+                Detalla los servicios que ofrece la biblioteca, como préstamo de libros, investigación, etc.
+            </p>
+        </section>
+        <section>
+            <h2>Ubicación</h2>
+            <p>
+                Indica la ubicación de la biblioteca y proporciona un mapa si es necesario.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <!-- Botón de Volver -->
+        <button onclick="goBack()">Volver</button>
+
+        <script>
+            // Función para ir atrás en el historial del navegador
+            function goBack() {
+                window.history.back();
+            }
+        </script>
+    </footer>
+</body>
+</html>
