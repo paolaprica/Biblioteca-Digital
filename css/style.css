@@ -1,5 +1,5 @@
-body { 
-    margin: 0em;
+body {
+    margin: 0rem;
     font-family: "Golos Text", sans-serif;
 
 }
@@ -13,15 +13,15 @@ p{
 }
 
 .cover {
-    height: 100pc;
-    background-image:url("../assets/imagen biblioteca.jpg"); 
+    height: 100em;
+    background-image:url("../assets/biblioteca.jpg"); 
     background-size: cover;
-    background-position: left top; 
+    background-position: center top; /* Change "left top" a "center top" para centrar la imagen verticalmente */
     background-position: right top;
     background-repeat: no-repeat;
     height: 300px;
     color: white;
-    background-color:rgba(0,0,0,-5);
+    background-color:rgba(0,0,0,-1);
     background-blend-mode: darken;
 
     animation: movimientoImagen 3s infinite linear; /* Ajusta la duración y el tipo de animación según tus preferencias */
@@ -40,15 +40,18 @@ p{
 }
 
 .card {
-    border: 0 ¡Important;
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.0.1), 0 2px 4px -2px rgba(0,0,0,0.06);
+    border: 0 !important;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.06);
 }
-.card title{
+
+.card .title {
     min-height: 3rem;
 }
-.card text{
+
+.card .text {
     min-height: 10rem;
 }
+
 
 #slider-container {
     width: 1200px; /* Establece el ancho del contenedor del slider */
@@ -57,16 +60,17 @@ p{
     overflow: hidden; /* Oculta cualquier contenido que desborde del contenedor */
 }
 
+.responsive-iframe {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%; /* Proporción para mantener la relación de aspecto en iframes */
+}
 
 
-
-
-
-
-
-
-
-
-
-
- 
+.responsive-iframe iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
